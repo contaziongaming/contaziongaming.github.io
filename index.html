@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contazion Gaming</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <div class="header-text">CONTAZION</div>
+    <img src="images/logo.png" alt="Logo" class="header-logo">
+    <div class="header-text">GAMING</div>
+  </header>
+
+  <div class="content">
+    <button onclick="showPlayers1(5)"><img src="images/top.png" alt=""></button>
+    <button onclick="showPlayers2(7)"><img src="images/jungle.png" alt=""></button>
+    <button onclick="showPlayers3(9)"><img src="images/mid.png" alt=""></button>
+    <button onclick="showPlayers4(11)"><img src="images/bot.png" alt=""></button>
+    <button onclick="showPlayers5(15)"><img src="images/support.png" alt=""></button>
+  </div>
+
+  <div id="players"></div>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://instagram.com/contaziongg" target="_blank"><img src="images/instagram.png" alt=""></a>
+      <a href="https://twitter.com/ContazionGG" target="_blank"><img src="images/twitter.png" alt=""></a>
+      <a href="https://youtube.com/channel/UCxoFnVQ9nr_Rc8cRL4pewlQ" target="_blank"><img src="images/youtube.png" alt=""></a>
+    </div>
+    <p>&copy; 2023 Contazion Gaming. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+  function showPlayers1(numPlayers) {
+    // Limpa o conteúdo atual da div
+    var playersDiv = document.getElementById("players");
+    playersDiv.innerHTML = "";
+
+    // Cria e adiciona as divs com as informações de cada jogador
+    for (var i = 1; i <= numPlayers; i++) {
+      var playerDiv = document.createElement("div");
+      playerDiv.classList.add("player");
+
+      var playerImage = document.createElement("img");
+      playerImage.src = "images/player" + i + ".jpg";
+      playerImage.alt = "Player " + i;
+
+      var playerName = document.createElement("p");
+      if (i === 1) {
+        playerName.textContent = "Kreutzer";
+      }
+      else if (i === 2) {
+        playerName.textContent = "Heregesz";
+      }
+      else if (i === 3) {
+        playerName.textContent = "Balthazarss";
+      }
+      else if (i === 4) {
+        playerName.textContent = "Titanic";
+      }
+      else if (i === 5) {
+        playerName.textContent = "Moriachi";
+      }
+
+      playerDiv.appendChild(playerImage);
+      playerDiv.appendChild(playerName);
+
+      playersDiv.appendChild(playerDiv);
+    }
+  }
+  </script>
+
+  <script>
+  function showPlayers2(numPlayers) {
+    // Limpa o conteúdo atual da div
+    var playersDiv = document.getElementById("players");
+    playersDiv.innerHTML = "";
+
+    // Cria e adiciona as divs com as informações de cada jogador
+    for (var i = 6; i <= numPlayers; i++) {
+      var playerDiv = document.createElement("div");
+      playerDiv.classList.add("player");
+
+      var playerImage = document.createElement("img");
+      playerImage.src = "images/player" + i + ".jpg";
+      playerImage.alt = "Player " + i;
+
+      var playerName = document.createElement("p");
+      if (i === 6) {
+        playerName.textContent = "TivityN";
+      }
+      else if (i === 7) {
+        playerName.textContent = "Aoki";
+      }
+
+      playerDiv.appendChild(playerImage);
+      playerDiv.appendChild(playerName);
+
+      playersDiv.appendChild(playerDiv);
+    }
+  }
+  </script>
+
+  <script>
+  function showPlayers3(numPlayers) {
+    // Limpa o conteúdo atual da div
+    var playersDiv = document.getElementById("players");
+    playersDiv.innerHTML = "";
+
+    // Cria e adiciona as divs com as informações de cada jogador
+    for (var i = 8; i <= numPlayers; i++) {
+      var playerDiv = document.createElement("div");
+      playerDiv.classList.add("player");
+
+      var playerImage = document.createElement("img");
+      playerImage.src = "images/player" + i + ".jpg";
+      playerImage.alt = "Player " + i;
+
+      var playerName = document.createElement("p");
+      if (i === 8) {
+        playerName.textContent = "Tempsz";
+      }
+      else if (i === 9) {
+        playerName.textContent = "Barrett";
+      }
+
+      playerDiv.appendChild(playerImage);
+      playerDiv.appendChild(playerName);
+
+      playersDiv.appendChild(playerDiv);
+    }
+  }
+  </script>
+
+  <script>
+  function showPlayers4(numPlayers) {
+    // Limpa o conteúdo atual da div
+    var playersDiv = document.getElementById("players");
+    playersDiv.innerHTML = "";
+
+    // Cria e adiciona as divs com as informações de cada jogador
+    for (var i = 10; i <= numPlayers; i++) {
+      var playerDiv = document.createElement("div");
+      playerDiv.classList.add("player");
+
+      var playerImage = document.createElement("img");
+      playerImage.src = "images/player" + i + ".jpg";
+      playerImage.alt = "Player " + i;
+
+      var playerName = document.createElement("p");
+      if (i === 10) {
+        playerName.textContent = "Nizt";
+      }
+      else if (i === 11) {
+        playerName.textContent = "Jokkan";
+      }
+
+      playerDiv.appendChild(playerImage);
+      playerDiv.appendChild(playerName);
+
+      playersDiv.appendChild(playerDiv);
+    }
+  }
+  </script>
+
+  <script>
+  function showPlayers5(numPlayers) {
+    // Limpa o conteúdo atual da div
+    var playersDiv = document.getElementById("players");
+    playersDiv.innerHTML = "";
+
+    // Cria e adiciona as divs com as informações de cada jogador
+    for (var i = 12; i <= numPlayers; i++) {
+      var playerDiv = document.createElement("div");
+      playerDiv.classList.add("player");
+
+      var playerImage = document.createElement("img");
+      playerImage.src = "images/player" + i + ".jpg";
+      playerImage.alt = "Player " + i;
+
+      var playerName = document.createElement("p");
+      if (i === 12) {
+        playerName.textContent = "Kuro";
+      }
+      else if (i === 13) {
+        playerName.textContent = "Near";
+      }
+      else if (i === 14) {
+        playerName.textContent = "Someday";
+      }
+      else if (i === 15) {
+        playerName.textContent = "Kyros";
+      }
+
+      playerDiv.appendChild(playerImage);
+      playerDiv.appendChild(playerName);
+
+      playersDiv.appendChild(playerDiv);
+    }
+  }
+  </script>
+</body>
+</html>
